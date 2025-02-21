@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .container {
+            background: rgb(255, 255, 255);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #cc2323;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #e63946;
+        }
+        .buzon {
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Escribir una Carta...</h2>
+        <input type="date" id="fecha">
+        <input type="text" id="titulo" placeholder="Título">
+        <textarea id="contenido" placeholder="Escribe tu carta aquí..." rows="4"></textarea>
+        <input type="text" id="firma" placeholder="Firma">
+        <button onclick="guardarCarta()">Guardar</button>
+        <div class="buzon">
+            <a href="buzon.html">
+                <img src="buzon.png" alt="Buzón" width="100">
+            </a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
